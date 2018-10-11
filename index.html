@@ -15,8 +15,19 @@
 		<form action="#">
 			<fieldset>
 				<legend>Enter a few sentences:</legend>
-				<textarea></textarea>
-				<button>Line up words in alphabetical order</button>
+				<textarea cols="300" rows="15"></textarea>
+				<fieldset>
+					<legend>Sort words:</legend>
+					<p>
+						<label for="A-Z">A-Z</label>
+						<input type="radio" name="alphabetical" value="A-Z" id="A-Z">
+					</p>
+					<p>
+						<label for="Z-A">Z-A</label>
+						<input type="radio" name="alphabetical" value="Z-A" id="Z-A">
+					</p>
+					<button>Sort</button>
+				</fieldset>
 			</fieldset>
 		</form>
 	</main>
