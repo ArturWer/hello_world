@@ -4,8 +4,10 @@ let userWords = [];
 
 sortButton.addEventListener('click', function (e) {
 	e.preventDefault();
+	userWords = [];
 	let userText = document.querySelector('textarea');
-	setArrayWords(userText.value);
+	sort(userText.value);
+	console.log(userWords);
 }, false);
 resetButton.addEventListener('click', function (e) {
 	e.preventDefault();
@@ -21,26 +23,16 @@ function isSpace(text){
 	};
 };
 
-function setArrayWords(userText){
-	if (userText.length > 0) {
-		let space = userText.indexOf(' ');
-		let word = "";
-		if (isSpace !== -1) {
-			word = userText.slice(userText[0], isSpace);
-			userWords.push(word);
-
-		} else if (isSpace === -1) {
-			word = userText;
-		};
-		
-		if (true) {}	
-	};
+function divideWords(text, space){
+	let firstWord = text.slice(0, space);
+	userWords.push(firstWord);
+	let anotherText = text.slice(space+1);
+	sort(anotherText);
 };
 
-function sort(){
-	let newUserText = userText.slice(isSpace+1);
-			if (newUserText.length > 0) {
-				console.log(`New user text is: ${newUserText}`);
-				setArrayWords(newUserText);
-			};
+function sort(text){
+	let space = isSpace(text);
+	if (space) {
+		divideWords(text, space);
+	} else userWords.push(text);
 };
