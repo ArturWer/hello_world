@@ -5,4 +5,15 @@ body{
 }
 textarea{
 	max-width: 760px;
+	font-size: 1.2em;
+}
+legend{
+	color: white;
+	background-color: black;
+}
+.A-Z{
+	color: rgb(10, 191, 7);
+}
+.Z-A{
+	color: rgb(3, 6, 66);
 }
