@@ -36,6 +36,7 @@ function divideWords(text, space){
 
 function sort(text){
 	text = text.trim();
+	text = replaceSpecialSymbols(text);
 	let space = isSpace(text);
 	if (space) {
 		divideWords(text, space);
@@ -46,4 +47,22 @@ function sort(text){
 		newText = newText.join(' ');
 		console.log(newText);
 	};
+};
+function replaceSpecialSymbols(text){
+	let str = text.replace(',',' ');
+	str = str.replace('\.',' ');
+	str = str.replace('\/',' ');
+	str = str.replace('\'',' ');
+	str = str.replace('\)',' ');
+	str = str.replace('\(',' ');
+	str = str.replace('\n',' ');
+	str = str.replace('\;',' ');
+	str = str.replace('\:',' ');
+	str = str.replace('\{',' ');
+	str = str.replace('\}',' ');
+	str = str.replace('\+',' ');
+	str = str.replace('\=',' ');
+	str = str.replace('\<',' ');
+	str = str.replace('\>',' ');
+	return str;
 };
