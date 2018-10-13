@@ -45,6 +45,7 @@ function sort(text){
 		let newText = userWords.sort();
 		console.log(newText);
 		newText = newText.join(' ');
+		document.querySelector('textarea').value = newText;
 		console.log(newText);
 	};
 };
@@ -53,6 +54,7 @@ function replaceSpecialSymbols(text){
 	str = str.replace('\.',' ');
 	str = str.replace('\/',' ');
 	str = str.replace('\'',' ');
+	str = str.replace('\"',' ');
 	str = str.replace('\)',' ');
 	str = str.replace('\(',' ');
 	str = str.replace('\n',' ');
