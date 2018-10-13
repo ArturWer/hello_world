@@ -43,5 +43,7 @@ function sort(text){
 		userWords.push(text);
 		let newText = userWords.sort();
 		console.log(newText);
+		newText = newText.join(' ');
+		console.log(newText);
 	};
 };
