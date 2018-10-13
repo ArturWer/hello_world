@@ -7,7 +7,6 @@ sortButton.addEventListener('click', function (e) {
 	userWords = [];
 	let userText = document.querySelector('textarea');
 	sort(userText.value);
-	console.log(userWords);
 }, false);
 resetButton.addEventListener('click', function (e) {
 	e.preventDefault();
@@ -26,13 +25,23 @@ function isSpace(text){
 function divideWords(text, space){
 	let firstWord = text.slice(0, space);
 	userWords.push(firstWord);
-	let anotherText = text.slice(space+1);
+	let anotherText = text.slice(space+1); 
+	if (!String.prototype.trim) {
+	  	String.prototype.trim = function () {
+	    	return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+	  };
+	};
 	sort(anotherText);
 };
 
 function sort(text){
+	text = text.trim();
 	let space = isSpace(text);
 	if (space) {
 		divideWords(text, space);
-	} else userWords.push(text);
+	} else {
+		userWords.push(text);
+		let newText = userWords.sort();
+		console.log(newText);
+	};
 };
