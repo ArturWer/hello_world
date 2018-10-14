@@ -17,10 +17,14 @@ legend{
 .Z-A{
 	color: rgb(3, 6, 66);
 }
-.radioBoxes{
-	max-width: 260px;
+.sortAZ-ZA{
+	width: 34%;
+	float: left;
+}
+.upperOrLowerCase{
+	width: 58%;
 	float: right;
 }
-.sortAZ-ZA{
-	float: left;
+button{
+	
 }
