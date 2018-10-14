@@ -2,6 +2,7 @@ body{
 	font-size: 1.2em;
 	max-width: 800px;
 	margin: 0 auto;
+	background-color: #EBEDF0;
 }
 textarea{
 	max-width: 760px;
@@ -18,7 +19,7 @@ legend{
 	color: rgb(3, 6, 66);
 }
 .sortAZ-ZA{
-	width: 34%;
+	width: 32%;
 	float: left;
 }
 .upperOrLowerCase{
@@ -26,5 +27,16 @@ legend{
 	float: right;
 }
 button{
-	
+	width: 100px;
+	box-shadow: 3px 4px 5px gray;
+	border-radius: 5px;
+	font-size: 1.5em;
+	color: white;
+	background-color: #2a2525;
+}
+button:hover{
+	color: silver;
+	background-color: white;
+	box-shadow: 1px 2px 3px gray;
+	border-radius: 15px;
 }
