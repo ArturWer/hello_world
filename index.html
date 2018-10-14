@@ -17,25 +17,37 @@
 				<legend>Enter a few sentences:</legend>
 				<textarea cols="300" rows="8"></textarea>
 			</fieldset>
-				<fieldset>
+				<fieldset class="radioBoxes, sortAZ-ZA">
 					<legend>Sort words:</legend>
 					<p>
 						<label for="A-Z">A-Z</label>
-						<input type="radio" name="alphabetical" value="A-Z" id="A-Z">
+						<input type="radio" name="alphabetical" value="A-Z" id="A-Z" checked>
 					</p>
 					<p>
 						<label for="Z-A">Z-A</label>
 						<input type="radio" name="alphabetical" value="Z-A" id="Z-A">
 					</p>
+				</fieldset>
+				<fieldset class="radioBoxes">
+					<legend>Convert words to one type</legend>
+					<p>
+						<input type="radio" name="case" value="upperCase" id="upperCase">
+						<label for="upperCase">Upper case</label>
+					</p>
+					<p>
+						<input type="radio" name="case" value="lowerCase" id="lowerCase">
+						<label for="lowerCase">Lower case</label>
+					</p>
+				</fieldset>
 					<button class="sortButton">Sort</button>
 					<button class="resetButton">Reset</button>
 				
-			</fieldset>
+			
 		</form>
 	</main>
 	<footer>
 
 	</footer>
-	<script type="text/javascript" src="scripts/script.js"></script>
+	<script src="scripts/script.js"></script>
 </body>
 </html>

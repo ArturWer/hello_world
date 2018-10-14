@@ -17,3 +17,10 @@ legend{
 .Z-A{
 	color: rgb(3, 6, 66);
 }
+.radioBoxes{
+	max-width: 260px;
+	float: right;
+}
+.sortAZ-ZA{
+	float: left;
+}
