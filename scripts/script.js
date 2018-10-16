@@ -1,3 +1,4 @@
+'use strict'
 let sortButton = document.querySelector('.sortButton');
 let resetButton = document.querySelector('.resetButton');
 let userWords = [];
