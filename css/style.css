@@ -3,6 +3,7 @@ body{
 	max-width: 800px;
 	margin: 0 auto;
 	background-color: #EBEDF0;
+	font-family: Oswald;
 }
 textarea{
 	max-width: 760px;
@@ -40,4 +41,7 @@ button:hover{
 	background-color: white;
 	box-shadow: 1px 2px 3px gray;
 	border-radius: 15px;
+}
+h1:hover{
+	color: red;
 }
