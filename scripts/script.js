@@ -1,6 +1,7 @@
 'use strict'
 let sortButton = document.querySelector('.sortButton');
 let resetButton = document.querySelector('.resetButton');
+let textTransform = document.querySelector('.text-transform');
 let userWords = [];
 
 sortButton.addEventListener('click', function (e) {
@@ -69,3 +70,18 @@ function replaceSpecialSymbols(text){
 	str = str.replace('\>',' ');
 	return str;
 };
+
+textTransform.addEventListener('change', function(e){
+	let userText = document.querySelector('textarea').value;
+	let targetId = e.target.id;
+	console.log(`Radio ${targetId} was changed.`);
+	if (targetId === 'capitalize') {
+		userText = userText.replace(/\b\w/g, l => l.toUpperCase());
+	} else if (targetId === 'lowerCase') {
+		userText = userText.toLowerCase();
+	} else if (targetId === 'upperCase') {
+		userText = userText.toUpperCase();
+	};
+	return document.querySelector('textarea').value = userText;
+
+});
