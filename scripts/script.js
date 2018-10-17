@@ -75,14 +75,18 @@ textTransform.addEventListener('click', function(e){
 	let el = document.querySelector('textarea');
 	let userText = el.value;
 	let targetId = e.target.id;
-	console.log(targetId);
 	console.log(`Radio ${targetId} was changed.`);
 	if (targetId === 'capitalize') {
 		el.className = 'capitalize-text';
-		//userText = userText.replace(/\b\w/g, l => l.toUpperCase());
 	} else if (targetId === 'lowerCase') {
+		if(el.hasAttribute('class')){
+			el.removeAttribute('class');
+		}
 		userText = userText.toLowerCase();
 	} else if (targetId === 'upperCase') {
+		if(el.hasAttribute('class')){
+			el.removeAttribute('class');
+		}
 		userText = userText.toUpperCase();
 	};
 	return document.querySelector('textarea').value = userText;
