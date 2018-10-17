@@ -27,6 +27,9 @@ legend{
 	width: 58%;
 	float: right;
 }
+.capitalize-text{
+	text-transform: capitalize;
+}
 button{
 	width: 100px;
 	box-shadow: 3px 4px 5px gray;

@@ -71,17 +71,19 @@ function replaceSpecialSymbols(text){
 	return str;
 };
 
-textTransform.addEventListener('change', function(e){
-	let userText = document.querySelector('textarea').value;
+textTransform.addEventListener('click', function(e){
+	let el = document.querySelector('textarea');
+	let userText = el.value;
 	let targetId = e.target.id;
+	console.log(targetId);
 	console.log(`Radio ${targetId} was changed.`);
 	if (targetId === 'capitalize') {
-		userText = userText.replace(/\b\w/g, l => l.toUpperCase());
+		el.className = 'capitalize-text';
+		//userText = userText.replace(/\b\w/g, l => l.toUpperCase());
 	} else if (targetId === 'lowerCase') {
 		userText = userText.toLowerCase();
 	} else if (targetId === 'upperCase') {
 		userText = userText.toUpperCase();
 	};
 	return document.querySelector('textarea').value = userText;
-
-});
+}, false);
