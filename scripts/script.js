@@ -44,7 +44,8 @@ function sort(text){
 		divideWords(text, space);
 	} else {
 		userWords.push(text);
-		let newText = userWords.sort();
+		
+		let newText = userWords.sort(function(a, b){return b-a});
 		console.log(newText);
 		newText = newText.join(' ');
 		document.querySelector('textarea').value = newText;
