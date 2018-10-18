@@ -45,7 +45,54 @@ header, footer {
 /* WRITE YOUR CODE BELOW HERE */
 html{
   font-family: 'Slabo 27px', serif;
+  font-size: 10px;
+  line-height: 1.7rem;
 }
 h1, h2{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Candal', sans-serif;
+  letter-spacing: .2rem;
+}
+h1{
+  font-size: 4rem;
+  line-height: 1rem;
+  text-align: center;
+}
+h2{
+  font-size: 3rem;
+}
+h2+p{
+  padding-top: 2rem;
+}
+p, li{
+  font-size: 1.9rem;
+  line-height: 1.5em;
+  letter-spacing: .1rem;
+  word-spacing: .1rem;
+}
+
+/*links*/
+a{
+  color: #a66;
+}
+a:link {
+ color: #3cb915;
+}
+
+a:visited {
+  color: #792C00;
+}
+
+a:focus {
+
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #a66;
+}
+
+a:active {
+  color: white;
+  background-color: green;
 }
