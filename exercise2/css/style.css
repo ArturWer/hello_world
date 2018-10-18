@@ -102,4 +102,20 @@ a:hover {
 a:active {
   background-color: green;
 }
-
+/*li*/
+aside ul{
+  list-style-type: none;
+  padding-left: 2rem;
+}
+aside ul li {
+  background: url('../img/arrow.png') no-repeat;
+  background-size: 1.5rem 1.5rem;
+  background-position: .2rem;
+  padding-left: 2rem;
+}
+aside ul li:hover{
+  background: url('../img/arrowHover.png') no-repeat;
+  background-size: 1.5rem 1.5rem;
+  background-position: .2rem;
+  padding-left: 2rem;
+}
