@@ -43,3 +43,9 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+html{
+  font-family: 'Slabo 27px', serif;
+}
+h1, h2{
+  font-family: 'Roboto', sans-serif;
+}
