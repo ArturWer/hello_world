@@ -119,3 +119,23 @@ aside ul li:hover{
   background-position: .2rem;
   padding-left: 2rem;
 }
+/*nav*/
+nav ul{
+  list-style-type: none;
+
+}
+nav a{
+  text-decoration: none;
+}
+nav ul li{
+  margin-bottom: 2rem;
+  border: .2rem solid #a66;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  text-align: center;
+}
+nav ul li:hover{
+  color: white;
+  background-color: #a66;
+  box-shadow: .5rem .5rem .5rem silver;
+}
